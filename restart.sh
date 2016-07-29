@@ -1,21 +1,12 @@
 #!/bin/bash
 #########################
-#author:anshsh
-#date:20160226
-#########################
+
+
 branch=$1
 if [ -z $branch ]; then
 	echo "执行错误：传入参数为空，请确认后building"
 	exit 0;
 fi
-work=/home/work
-resin_work=$work/app/resin
-src_work=$work/env-oc/workspace/$branch
-warbak_work=$work/env-oc/bak_war
-config_bak_work=$work/env-oc/configure_oc
-config_work=$work/env-oc/workspace/$branch/WEB-INF/classes
-resinidFile=$work/env-oc/resinid.txt
-
 short_date=`date +%Y%m%d%H%M`;
 
 #check resinidfile exists? otherwise , touch new file
